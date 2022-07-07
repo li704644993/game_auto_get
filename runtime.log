@@ -1,0 +1,36 @@
+2022-07-08 05:39:01.465 | SUCCESS  | services.deploy:job_loop_claim:152 - >> STARTUP [AwesomeScheduler] SynergyTunnel Pattern: True
+2022-07-08 05:39:02.077 | DEBUG    | services.utils.toolbox.toolbox:get_challenge_ctx:347 - >> ACTIVATE [__Context__] 🎮 激活挑战者上下文
+2022-07-08 05:39:02.703 | DEBUG    | services.utils.toolbox.toolbox:get_challenge_ctx:363 - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/103.0.5060.53 Safari/537.36
+2022-07-08 05:39:02.704 | DEBUG    | services.utils.toolbox.toolbox:get_challenge_ctx:364 - Setup info: hook=GitHub Action platform=linux run_mode=goto
+2022-07-08 05:39:02.705 | SUCCESS  | services.bricklayer.core:refresh_ctx_cookies:1334 - >> MATCH [__Context__] 🎮 启动挑战者上下文 - ctx_session=False
+2022-07-08 05:39:06.029 | DEBUG    | services.bricklayer.core:login:1038 - >> MATCH [CookieManager] 实体信息注入完毕
+2022-07-08 05:39:06.039 | DEBUG    | services.bricklayer.core:fall_in_captcha_login:108 - >> ARMOR [ArmorUtils] 正在检测隐藏在登录界面的人机挑战...
+2022-07-08 05:39:09.327 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:80 - >> Challenge [ArmorCaptcha] 获取挑战标签 - label=「airplane」
+2022-07-08 05:39:09.813 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:80 - >> Challenge [ArmorCaptcha] 开始挑战
+2022-07-08 05:39:11.422 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:80 - >> Challenge [ArmorCaptcha] 提交挑战 MT-YOLOv6n(onnx)_model: 1.02s
+2022-07-08 05:39:13.441 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:80 - >> Challenge [ArmorCaptcha] 获取响应 - desc=继续挑战(continue)
+2022-07-08 05:39:14.490 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:80 - >> Challenge [ArmorCaptcha] 获取挑战标签 - label=「airplane」
+2022-07-08 05:39:14.901 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:80 - >> Challenge [ArmorCaptcha] 开始挑战
+2022-07-08 05:39:15.684 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:80 - >> Challenge [ArmorCaptcha] 提交挑战 MT-YOLOv6n(onnx)_model: 0.42s
+2022-07-08 05:39:22.798 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:80 - >> Challenge [ArmorCaptcha] 获取响应 - desc=退火成功(success)
+2022-07-08 05:39:23.345 | DEBUG    | services.bricklayer.core:load_ctx_cookies:1273 - >> LOAD [CookieManager] Load context cookie.
+2022-07-08 05:39:28.608 | DEBUG    | services.deploy:promotions_splitter:350 - >> STARTUP [GameClaimer] 🍜 发现周免游戏 - game=『Killing Floor 2』 url=https://store.epicgames.com/zh-CN/p/killing-floor-2
+2022-07-08 05:39:28.609 | DEBUG    | services.deploy:promotions_splitter:350 - >> STARTUP [GameClaimer] 🍜 发现周免游戏 - game=『Ancient Enemy』 url=https://store.epicgames.com/zh-CN/p/ancient-enemy
+2022-07-08 05:39:28.609 | DEBUG    | services.bricklayer.game:cart_balancing:170 - >> REMOVE [GameClaimer] 将购物车商品移至愿望清单
+2022-07-08 05:39:43.881 | SUCCESS  | services.bricklayer.core:purchase_status:722 - >> GET [GameClaimer] 🛒 添加至购物车 优惠截止于2022/7/14 10:00 - game=『Killing Floor 2』
+2022-07-08 05:39:44.003 | DEBUG    | services.bricklayer.core:_activate_payment:937 - [🔖] 资源订单加载完毕 - mode=add
+2022-07-08 05:39:54.932 | SUCCESS  | services.bricklayer.core:purchase_status:722 - >> GET [GameClaimer] 🛒 添加至购物车 优惠截止于2022/7/14 10:00 - game=『Ancient Enemy』
+2022-07-08 05:39:55.073 | DEBUG    | services.bricklayer.core:_activate_payment:937 - [🔖] 资源订单加载完毕 - mode=add
+2022-07-08 05:39:55.980 | DEBUG    | services.bricklayer.game:empty_shopping_payment:187 - [🛵] 重载身份令牌
+2022-07-08 05:40:00.904 | DEBUG    | services.bricklayer.game:empty_shopping_payment:196 - [🛵] 审查购物车状态
+2022-07-08 05:40:01.169 | DEBUG    | services.bricklayer.core:_activate_payment:937 - [🔖] 资源订单加载完毕 - mode=下单
+2022-07-08 05:40:04.280 | DEBUG    | services.bricklayer.game:empty_shopping_payment:213 - [🛵] 处理购物订单...
+2022-07-08 05:40:04.312 | DEBUG    | services.bricklayer.core:cart_handle_payment:1095 - [🌀] 切换至内联订单框架
+2022-07-08 05:40:04.312 | DEBUG    | services.bricklayer.core:cart_handle_payment:1101 - [⚔] 激活人机挑战...
+2022-07-08 05:40:10.589 | DEBUG    | services.bricklayer.core:annealing:1051 - [🎃] 退火成功
+2022-07-08 05:40:10.589 | DEBUG    | services.bricklayer.core:cart_handle_payment:1116 - [🌀] 弹出内联订单框架...
+2022-07-08 05:40:16.710 | DEBUG    | services.bricklayer.game:empty_shopping_payment:187 - [🛵] 重载身份令牌
+2022-07-08 05:40:19.985 | DEBUG    | services.bricklayer.game:empty_shopping_payment:196 - [🛵] 审查购物车状态
+2022-07-08 05:40:25.128 | SUCCESS  | services.bricklayer.game:empty_shopping_payment:199 - >> ADVANCE [GameClaimer] ✔ 购物车已清空
+2022-07-08 05:40:25.538 | INFO     | services.deploy:promotions_splitter:337 - >> GET [GameClaimer] 🛒 领取成功 - game=『Killing Floor 2』 url=https://store.epicgames.com/zh-CN/p/killing-floor-2
+2022-07-08 05:40:25.539 | INFO     | services.deploy:promotions_splitter:337 - >> GET [GameClaimer] 🛒 领取成功 - game=『Ancient Enemy』 url=https://store.epicgames.com/zh-CN/p/ancient-enemy
