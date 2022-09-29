@@ -1,150 +1,111 @@
-2022-09-16 05:43:17.945 | DEBUG    | services.utils.armor.anti_hcaptcha.solutions.kernel:_request_asset:324 - Downloading rainbow.yaml from https://github.com/QIN2DIM/hcaptcha-challenger/releases/download/model/rainbow.yaml
-2022-09-16 05:43:21.965 | DEBUG    | services.utils.armor.anti_hcaptcha.solutions.kernel:_request_asset:324 - Downloading yolov6t.onnx from https://github.com/QIN2DIM/hcaptcha-challenger/releases/download/model/yolov6t.onnx
-2022-09-16 05:43:28.176 | INFO     | services.deploy:job_loop_claim:138 - >> STARTUP [AwesomeScheduler] SynergyTunnel Pattern: True
-2022-09-16 05:43:28.189 | DEBUG    | services.bricklayer.core:load_ctx_cookies:1254 - >> LOAD [CookieManager] Load context cookie.
-2022-09-16 05:43:28.318 | SUCCESS  | services.bricklayer.core:refresh_ctx_cookies:1314 - >> MATCH [__Context__] 🎮 启动挑战者上下文 - ctx_session=False
-2022-09-16 05:43:28.630 | DEBUG    | services.utils.toolbox.toolbox:get_challenge_ctx:392 - >> ACTIVATE [__Context__] 🎮 激活挑战者上下文
-2022-09-16 05:43:40.054 | DEBUG    | services.utils.toolbox.toolbox:get_challenge_ctx:403 - Setup info: hook=GitHub Action platform=linux
-2022-09-16 05:43:40.054 | DEBUG    | services.utils.toolbox.toolbox:_patch_headless:318 - patch headless
-2022-09-16 05:43:46.078 | DEBUG    | services.bricklayer.core:login:1019 - >> MATCH [CookieManager] 实体信息注入完毕
-2022-09-16 05:43:46.327 | DEBUG    | services.bricklayer.core:fall_in_captcha_login:83 - >> ARMOR [ArmorUtils] 正在检测隐藏在登录界面的人机挑战...
-2022-09-16 05:43:50.658 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 获取挑战标签 - label=「porcelain_teacup」
-2022-09-16 05:43:51.420 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 开始挑战
-2022-09-16 05:43:51.422 | DEBUG    | services.utils.armor.anti_hcaptcha.solutions.kernel:_request_asset:324 - Downloading porcelain_teacup.onnx from https://github.com/QIN2DIM/hcaptcha-challenger/releases/download/model/porcelain_teacup.onnx
-2022-09-16 05:43:53.624 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 提交挑战 porcelain_teacup(ResNet)_model: 0.09s
-2022-09-16 05:43:55.648 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 获取响应 - desc=继续挑战(continue)
-2022-09-16 05:43:57.374 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 获取挑战标签 - label=「植物」
-2022-09-16 05:43:58.469 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] Types of challenges not yet scheduled - label=「植物」 prompt=「请点击桌子上包含植物的每张图片」 screenshot=/home/runner/work/game_auto_get/game_auto_get/epic/src/database/temp_cache/captcha_screenshot/1663278238.植物.png site_link=https://www.epicgames.com/id/login/epic?lang=zh-CN issues=https://github.com/QIN2DIM/hcaptcha-challenger/issues?q=%E6%A4%8D%E7%89%A9
-2022-09-16 05:44:01.535 | DEBUG    | services.bricklayer.core:login:1019 - >> MATCH [CookieManager] 实体信息注入完毕
-2022-09-16 05:44:01.585 | DEBUG    | services.bricklayer.core:fall_in_captcha_login:83 - >> ARMOR [ArmorUtils] 正在检测隐藏在登录界面的人机挑战...
-2022-09-16 05:44:05.069 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 获取挑战标签 - label=「植物」
-2022-09-16 05:44:06.002 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] Types of challenges not yet scheduled - label=「植物」 prompt=「请点击桌子上包含植物的每张图片」 screenshot=/home/runner/work/game_auto_get/game_auto_get/epic/src/database/temp_cache/captcha_screenshot/1663278245.植物.png site_link=https://www.epicgames.com/id/login/epic?lang=zh-CN issues=https://github.com/QIN2DIM/hcaptcha-challenger/issues?q=%E6%A4%8D%E7%89%A9
-2022-09-16 05:44:08.756 | DEBUG    | services.bricklayer.core:login:1019 - >> MATCH [CookieManager] 实体信息注入完毕
-2022-09-16 05:44:08.805 | DEBUG    | services.bricklayer.core:fall_in_captcha_login:83 - >> ARMOR [ArmorUtils] 正在检测隐藏在登录界面的人机挑战...
-2022-09-16 05:44:12.227 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 获取挑战标签 - label=「猫形饼干」
-2022-09-16 05:44:13.226 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] Types of challenges not yet scheduled - label=「猫形饼干」 prompt=「请点击每张包含猫形饼干的图片」 screenshot=/home/runner/work/game_auto_get/game_auto_get/epic/src/database/temp_cache/captcha_screenshot/1663278252.猫形饼干.png site_link=https://www.epicgames.com/id/login/epic?lang=zh-CN issues=https://github.com/QIN2DIM/hcaptcha-challenger/issues?q=%E7%8C%AB%E5%BD%A2%E9%A5%BC%E5%B9%B2
-2022-09-16 05:44:16.038 | DEBUG    | services.bricklayer.core:login:1019 - >> MATCH [CookieManager] 实体信息注入完毕
-2022-09-16 05:44:16.094 | DEBUG    | services.bricklayer.core:fall_in_captcha_login:83 - >> ARMOR [ArmorUtils] 正在检测隐藏在登录界面的人机挑战...
-2022-09-16 05:44:19.382 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 获取挑战标签 - label=「植物」
-2022-09-16 05:44:20.419 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] Types of challenges not yet scheduled - label=「植物」 prompt=「请点击桌子上包含植物的每张图片」 screenshot=/home/runner/work/game_auto_get/game_auto_get/epic/src/database/temp_cache/captcha_screenshot/1663278260.植物.png site_link=https://www.epicgames.com/id/login/epic?lang=zh-CN issues=https://github.com/QIN2DIM/hcaptcha-challenger/issues?q=%E6%A4%8D%E7%89%A9
-2022-09-16 05:44:23.178 | DEBUG    | services.bricklayer.core:login:1019 - >> MATCH [CookieManager] 实体信息注入完毕
-2022-09-16 05:44:23.227 | DEBUG    | services.bricklayer.core:fall_in_captcha_login:83 - >> ARMOR [ArmorUtils] 正在检测隐藏在登录界面的人机挑战...
-2022-09-16 05:44:26.525 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 获取挑战标签 - label=「porcelain_teacup」
-2022-09-16 05:44:27.311 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 开始挑战
-2022-09-16 05:44:29.140 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 提交挑战 porcelain_teacup(ResNet)_model: 0.02s
-2022-09-16 05:44:31.160 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 获取响应 - desc=继续挑战(continue)
-2022-09-16 05:44:32.821 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 获取挑战标签 - label=「植物」
-2022-09-16 05:44:34.005 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] Types of challenges not yet scheduled - label=「植物」 prompt=「请点击桌子上包含植物的每张图片」 screenshot=/home/runner/work/game_auto_get/game_auto_get/epic/src/database/temp_cache/captcha_screenshot/1663278273.植物.png site_link=https://www.epicgames.com/id/login/epic?lang=zh-CN issues=https://github.com/QIN2DIM/hcaptcha-challenger/issues?q=%E6%A4%8D%E7%89%A9
-2022-09-16 05:44:37.044 | DEBUG    | services.bricklayer.core:login:1019 - >> MATCH [CookieManager] 实体信息注入完毕
-2022-09-16 05:44:37.106 | DEBUG    | services.bricklayer.core:fall_in_captcha_login:83 - >> ARMOR [ArmorUtils] 正在检测隐藏在登录界面的人机挑战...
-2022-09-16 05:44:40.513 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 获取挑战标签 - label=「porcelain_teacup」
-2022-09-16 05:44:41.292 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 开始挑战
-2022-09-16 05:44:43.055 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 提交挑战 porcelain_teacup(ResNet)_model: 0.01s
-2022-09-16 05:44:45.073 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 获取响应 - desc=继续挑战(continue)
-2022-09-16 05:44:46.768 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 获取挑战标签 - label=「植物」
-2022-09-16 05:44:47.767 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] Types of challenges not yet scheduled - label=「植物」 prompt=「请点击桌子上包含植物的每张图片」 screenshot=/home/runner/work/game_auto_get/game_auto_get/epic/src/database/temp_cache/captcha_screenshot/1663278287.植物.png site_link=https://www.epicgames.com/id/login/epic?lang=zh-CN issues=https://github.com/QIN2DIM/hcaptcha-challenger/issues?q=%E6%A4%8D%E7%89%A9
-2022-09-16 05:44:50.479 | DEBUG    | services.bricklayer.core:login:1019 - >> MATCH [CookieManager] 实体信息注入完毕
-2022-09-16 05:44:50.524 | DEBUG    | services.bricklayer.core:fall_in_captcha_login:83 - >> ARMOR [ArmorUtils] 正在检测隐藏在登录界面的人机挑战...
-2022-09-16 05:44:53.971 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 获取挑战标签 - label=「猫形饼干」
-2022-09-16 05:44:54.991 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] Types of challenges not yet scheduled - label=「猫形饼干」 prompt=「请点击每张包含猫形饼干的图片」 screenshot=/home/runner/work/game_auto_get/game_auto_get/epic/src/database/temp_cache/captcha_screenshot/1663278294.猫形饼干.png site_link=https://www.epicgames.com/id/login/epic?lang=zh-CN issues=https://github.com/QIN2DIM/hcaptcha-challenger/issues?q=%E7%8C%AB%E5%BD%A2%E9%A5%BC%E5%B9%B2
-2022-09-16 05:44:57.674 | DEBUG    | services.bricklayer.core:login:1019 - >> MATCH [CookieManager] 实体信息注入完毕
-2022-09-16 05:44:57.789 | DEBUG    | services.bricklayer.core:fall_in_captcha_login:83 - >> ARMOR [ArmorUtils] 正在检测隐藏在登录界面的人机挑战...
-2022-09-16 05:45:01.014 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 获取挑战标签 - label=「猫形饼干」
-2022-09-16 05:45:02.053 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] Types of challenges not yet scheduled - label=「猫形饼干」 prompt=「请点击每张包含猫形饼干的图片」 screenshot=/home/runner/work/game_auto_get/game_auto_get/epic/src/database/temp_cache/captcha_screenshot/1663278301.猫形饼干.png site_link=https://www.epicgames.com/id/login/epic?lang=zh-CN issues=https://github.com/QIN2DIM/hcaptcha-challenger/issues?q=%E7%8C%AB%E5%BD%A2%E9%A5%BC%E5%B9%B2
-2022-09-16 05:45:04.717 | DEBUG    | services.bricklayer.core:login:1019 - >> MATCH [CookieManager] 实体信息注入完毕
-2022-09-16 05:45:04.765 | DEBUG    | services.bricklayer.core:fall_in_captcha_login:83 - >> ARMOR [ArmorUtils] 正在检测隐藏在登录界面的人机挑战...
-2022-09-16 05:45:08.018 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 获取挑战标签 - label=「猫形饼干」
-2022-09-16 05:45:09.091 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] Types of challenges not yet scheduled - label=「猫形饼干」 prompt=「请点击每张包含猫形饼干的图片」 screenshot=/home/runner/work/game_auto_get/game_auto_get/epic/src/database/temp_cache/captcha_screenshot/1663278308.猫形饼干.png site_link=https://www.epicgames.com/id/login/epic?lang=zh-CN issues=https://github.com/QIN2DIM/hcaptcha-challenger/issues?q=%E7%8C%AB%E5%BD%A2%E9%A5%BC%E5%B9%B2
-2022-09-16 05:45:11.730 | DEBUG    | services.bricklayer.core:login:1019 - >> MATCH [CookieManager] 实体信息注入完毕
-2022-09-16 05:45:11.778 | DEBUG    | services.bricklayer.core:fall_in_captcha_login:83 - >> ARMOR [ArmorUtils] 正在检测隐藏在登录界面的人机挑战...
-2022-09-16 05:45:15.046 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 获取挑战标签 - label=「植物」
-2022-09-16 05:45:16.023 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] Types of challenges not yet scheduled - label=「植物」 prompt=「请点击桌子上包含植物的每张图片」 screenshot=/home/runner/work/game_auto_get/game_auto_get/epic/src/database/temp_cache/captcha_screenshot/1663278315.植物.png site_link=https://www.epicgames.com/id/login/epic?lang=zh-CN issues=https://github.com/QIN2DIM/hcaptcha-challenger/issues?q=%E6%A4%8D%E7%89%A9
-2022-09-16 05:45:18.647 | DEBUG    | services.bricklayer.core:login:1019 - >> MATCH [CookieManager] 实体信息注入完毕
-2022-09-16 05:45:18.698 | DEBUG    | services.bricklayer.core:fall_in_captcha_login:83 - >> ARMOR [ArmorUtils] 正在检测隐藏在登录界面的人机挑战...
-2022-09-16 05:45:21.932 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 获取挑战标签 - label=「adult_cat」
-2022-09-16 05:45:22.675 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 开始挑战
-2022-09-16 05:45:22.677 | DEBUG    | services.utils.armor.anti_hcaptcha.solutions.kernel:_request_asset:324 - Downloading adult_cat.onnx from https://github.com/QIN2DIM/hcaptcha-challenger/releases/download/model/adult_cat.onnx
-2022-09-16 05:45:24.280 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 提交挑战 adult_cat(ResNet)_model: 0.15s
-2022-09-16 05:45:26.302 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 获取响应 - desc=继续挑战(continue)
-2022-09-16 05:45:28.034 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 获取挑战标签 - label=「adult_cat」
-2022-09-16 05:45:28.763 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 开始挑战
-2022-09-16 05:45:30.787 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 提交挑战 adult_cat(ResNet)_model: 0.01s
-2022-09-16 05:45:32.808 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 获取响应 - desc=继续挑战(continue)
-2022-09-16 05:45:35.471 | DEBUG    | services.bricklayer.core:login:1019 - >> MATCH [CookieManager] 实体信息注入完毕
-2022-09-16 05:45:35.535 | DEBUG    | services.bricklayer.core:fall_in_captcha_login:83 - >> ARMOR [ArmorUtils] 正在检测隐藏在登录界面的人机挑战...
-2022-09-16 05:45:38.826 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 获取挑战标签 - label=「植物」
-2022-09-16 05:45:39.800 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] Types of challenges not yet scheduled - label=「植物」 prompt=「请点击桌子上包含植物的每张图片」 screenshot=/home/runner/work/game_auto_get/game_auto_get/epic/src/database/temp_cache/captcha_screenshot/1663278339.植物.png site_link=https://www.epicgames.com/id/login/epic?lang=zh-CN issues=https://github.com/QIN2DIM/hcaptcha-challenger/issues?q=%E6%A4%8D%E7%89%A9
-2022-09-16 05:45:42.433 | DEBUG    | services.bricklayer.core:login:1019 - >> MATCH [CookieManager] 实体信息注入完毕
-2022-09-16 05:45:42.481 | DEBUG    | services.bricklayer.core:fall_in_captcha_login:83 - >> ARMOR [ArmorUtils] 正在检测隐藏在登录界面的人机挑战...
-2022-09-16 05:45:45.737 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 获取挑战标签 - label=「猫形饼干」
-2022-09-16 05:45:46.735 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] Types of challenges not yet scheduled - label=「猫形饼干」 prompt=「请点击每张包含猫形饼干的图片」 screenshot=/home/runner/work/game_auto_get/game_auto_get/epic/src/database/temp_cache/captcha_screenshot/1663278346.猫形饼干.png site_link=https://www.epicgames.com/id/login/epic?lang=zh-CN issues=https://github.com/QIN2DIM/hcaptcha-challenger/issues?q=%E7%8C%AB%E5%BD%A2%E9%A5%BC%E5%B9%B2
-2022-09-16 05:45:49.218 | DEBUG    | services.bricklayer.core:login:1019 - >> MATCH [CookieManager] 实体信息注入完毕
-2022-09-16 05:45:49.279 | DEBUG    | services.bricklayer.core:fall_in_captcha_login:83 - >> ARMOR [ArmorUtils] 正在检测隐藏在登录界面的人机挑战...
-2022-09-16 05:45:52.751 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 获取挑战标签 - label=「猫形饼干」
-2022-09-16 05:45:53.669 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] Types of challenges not yet scheduled - label=「猫形饼干」 prompt=「请点击每张包含猫形饼干的图片」 screenshot=/home/runner/work/game_auto_get/game_auto_get/epic/src/database/temp_cache/captcha_screenshot/1663278353.猫形饼干.png site_link=https://www.epicgames.com/id/login/epic?lang=zh-CN issues=https://github.com/QIN2DIM/hcaptcha-challenger/issues?q=%E7%8C%AB%E5%BD%A2%E9%A5%BC%E5%B9%B2
-2022-09-16 05:45:56.385 | DEBUG    | services.bricklayer.core:login:1019 - >> MATCH [CookieManager] 实体信息注入完毕
-2022-09-16 05:45:56.437 | DEBUG    | services.bricklayer.core:fall_in_captcha_login:83 - >> ARMOR [ArmorUtils] 正在检测隐藏在登录界面的人机挑战...
-2022-09-16 05:45:59.655 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 获取挑战标签 - label=「porcelain_teacup」
-2022-09-16 05:46:00.383 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 开始挑战
-2022-09-16 05:46:01.805 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 提交挑战 porcelain_teacup(ResNet)_model: 0.01s
-2022-09-16 05:46:03.826 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 获取响应 - desc=继续挑战(continue)
-2022-09-16 05:46:05.401 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 获取挑战标签 - label=「猫形饼干」
-2022-09-16 05:46:06.353 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] Types of challenges not yet scheduled - label=「猫形饼干」 prompt=「请点击每张包含猫形饼干的图片」 screenshot=/home/runner/work/game_auto_get/game_auto_get/epic/src/database/temp_cache/captcha_screenshot/1663278366.猫形饼干.png site_link=https://www.epicgames.com/id/login/epic?lang=zh-CN issues=https://github.com/QIN2DIM/hcaptcha-challenger/issues?q=%E7%8C%AB%E5%BD%A2%E9%A5%BC%E5%B9%B2
-2022-09-16 05:46:08.888 | DEBUG    | services.bricklayer.core:login:1019 - >> MATCH [CookieManager] 实体信息注入完毕
-2022-09-16 05:46:08.940 | DEBUG    | services.bricklayer.core:fall_in_captcha_login:83 - >> ARMOR [ArmorUtils] 正在检测隐藏在登录界面的人机挑战...
-2022-09-16 05:46:12.190 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 获取挑战标签 - label=「猫形饼干」
-2022-09-16 05:46:13.173 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] Types of challenges not yet scheduled - label=「猫形饼干」 prompt=「请点击每张包含猫形饼干的图片」 screenshot=/home/runner/work/game_auto_get/game_auto_get/epic/src/database/temp_cache/captcha_screenshot/1663278372.猫形饼干.png site_link=https://www.epicgames.com/id/login/epic?lang=zh-CN issues=https://github.com/QIN2DIM/hcaptcha-challenger/issues?q=%E7%8C%AB%E5%BD%A2%E9%A5%BC%E5%B9%B2
-2022-09-16 05:46:15.779 | DEBUG    | services.bricklayer.core:login:1019 - >> MATCH [CookieManager] 实体信息注入完毕
-2022-09-16 05:46:15.889 | DEBUG    | services.bricklayer.core:fall_in_captcha_login:83 - >> ARMOR [ArmorUtils] 正在检测隐藏在登录界面的人机挑战...
-2022-09-16 05:46:19.083 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 获取挑战标签 - label=「porcelain_teacup」
-2022-09-16 05:46:19.833 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 开始挑战
-2022-09-16 05:46:21.259 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 提交挑战 porcelain_teacup(ResNet)_model: 0.01s
-2022-09-16 05:46:23.277 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 获取响应 - desc=继续挑战(continue)
-2022-09-16 05:46:24.924 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 获取挑战标签 - label=「猫形饼干」
-2022-09-16 05:46:25.906 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] Types of challenges not yet scheduled - label=「猫形饼干」 prompt=「请点击每张包含猫形饼干的图片」 screenshot=/home/runner/work/game_auto_get/game_auto_get/epic/src/database/temp_cache/captcha_screenshot/1663278385.猫形饼干.png site_link=https://www.epicgames.com/id/login/epic?lang=zh-CN issues=https://github.com/QIN2DIM/hcaptcha-challenger/issues?q=%E7%8C%AB%E5%BD%A2%E9%A5%BC%E5%B9%B2
-2022-09-16 05:46:28.567 | DEBUG    | services.bricklayer.core:login:1019 - >> MATCH [CookieManager] 实体信息注入完毕
-2022-09-16 05:46:28.683 | DEBUG    | services.bricklayer.core:fall_in_captcha_login:83 - >> ARMOR [ArmorUtils] 正在检测隐藏在登录界面的人机挑战...
-2022-09-16 05:46:31.854 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 获取挑战标签 - label=「植物」
-2022-09-16 05:46:32.803 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] Types of challenges not yet scheduled - label=「植物」 prompt=「请点击桌子上包含植物的每张图片」 screenshot=/home/runner/work/game_auto_get/game_auto_get/epic/src/database/temp_cache/captcha_screenshot/1663278392.植物.png site_link=https://www.epicgames.com/id/login/epic?lang=zh-CN issues=https://github.com/QIN2DIM/hcaptcha-challenger/issues?q=%E6%A4%8D%E7%89%A9
-2022-09-16 05:46:35.418 | DEBUG    | services.bricklayer.core:login:1019 - >> MATCH [CookieManager] 实体信息注入完毕
-2022-09-16 05:46:35.653 | DEBUG    | services.bricklayer.core:fall_in_captcha_login:83 - >> ARMOR [ArmorUtils] 正在检测隐藏在登录界面的人机挑战...
-2022-09-16 05:46:39.036 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 获取挑战标签 - label=「porcelain_teacup」
-2022-09-16 05:46:39.783 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 开始挑战
-2022-09-16 05:46:42.168 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 提交挑战 porcelain_teacup(ResNet)_model: 0.01s
-2022-09-16 05:46:47.254 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 获取响应 - desc=登入页面错误回复(crash)
-2022-09-16 05:46:49.840 | DEBUG    | services.bricklayer.core:login:1019 - >> MATCH [CookieManager] 实体信息注入完毕
-2022-09-16 05:46:49.886 | DEBUG    | services.bricklayer.core:fall_in_captcha_login:83 - >> ARMOR [ArmorUtils] 正在检测隐藏在登录界面的人机挑战...
-2022-09-16 05:46:53.240 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 获取挑战标签 - label=「猫形饼干」
-2022-09-16 05:46:54.237 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] Types of challenges not yet scheduled - label=「猫形饼干」 prompt=「请点击每张包含猫形饼干的图片」 screenshot=/home/runner/work/game_auto_get/game_auto_get/epic/src/database/temp_cache/captcha_screenshot/1663278413.猫形饼干.png site_link=https://www.epicgames.com/id/login/epic?lang=zh-CN issues=https://github.com/QIN2DIM/hcaptcha-challenger/issues?q=%E7%8C%AB%E5%BD%A2%E9%A5%BC%E5%B9%B2
-2022-09-16 05:46:56.849 | DEBUG    | services.bricklayer.core:login:1019 - >> MATCH [CookieManager] 实体信息注入完毕
-2022-09-16 05:46:56.907 | DEBUG    | services.bricklayer.core:fall_in_captcha_login:83 - >> ARMOR [ArmorUtils] 正在检测隐藏在登录界面的人机挑战...
-2022-09-16 05:47:00.272 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 获取挑战标签 - label=「猫形饼干」
-2022-09-16 05:47:01.299 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] Types of challenges not yet scheduled - label=「猫形饼干」 prompt=「请点击每张包含猫形饼干的图片」 screenshot=/home/runner/work/game_auto_get/game_auto_get/epic/src/database/temp_cache/captcha_screenshot/1663278421.猫形饼干.png site_link=https://www.epicgames.com/id/login/epic?lang=zh-CN issues=https://github.com/QIN2DIM/hcaptcha-challenger/issues?q=%E7%8C%AB%E5%BD%A2%E9%A5%BC%E5%B9%B2
-2022-09-16 05:47:04.202 | DEBUG    | services.bricklayer.core:login:1019 - >> MATCH [CookieManager] 实体信息注入完毕
-2022-09-16 05:47:04.253 | DEBUG    | services.bricklayer.core:fall_in_captcha_login:83 - >> ARMOR [ArmorUtils] 正在检测隐藏在登录界面的人机挑战...
-2022-09-16 05:47:07.531 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 获取挑战标签 - label=「植物」
-2022-09-16 05:47:08.553 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] Types of challenges not yet scheduled - label=「植物」 prompt=「请点击桌子上包含植物的每张图片」 screenshot=/home/runner/work/game_auto_get/game_auto_get/epic/src/database/temp_cache/captcha_screenshot/1663278428.植物.png site_link=https://www.epicgames.com/id/login/epic?lang=zh-CN issues=https://github.com/QIN2DIM/hcaptcha-challenger/issues?q=%E6%A4%8D%E7%89%A9
-2022-09-16 05:47:11.343 | DEBUG    | services.bricklayer.core:login:1019 - >> MATCH [CookieManager] 实体信息注入完毕
-2022-09-16 05:47:11.402 | DEBUG    | services.bricklayer.core:fall_in_captcha_login:83 - >> ARMOR [ArmorUtils] 正在检测隐藏在登录界面的人机挑战...
-2022-09-16 05:47:14.684 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 获取挑战标签 - label=「植物」
-2022-09-16 05:47:15.774 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] Types of challenges not yet scheduled - label=「植物」 prompt=「请点击桌子上包含植物的每张图片」 screenshot=/home/runner/work/game_auto_get/game_auto_get/epic/src/database/temp_cache/captcha_screenshot/1663278435.植物.png site_link=https://www.epicgames.com/id/login/epic?lang=zh-CN issues=https://github.com/QIN2DIM/hcaptcha-challenger/issues?q=%E6%A4%8D%E7%89%A9
-2022-09-16 05:47:18.510 | DEBUG    | services.bricklayer.core:login:1019 - >> MATCH [CookieManager] 实体信息注入完毕
-2022-09-16 05:47:18.556 | DEBUG    | services.bricklayer.core:fall_in_captcha_login:83 - >> ARMOR [ArmorUtils] 正在检测隐藏在登录界面的人机挑战...
-2022-09-16 05:47:21.876 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 获取挑战标签 - label=「porcelain_teacup」
-2022-09-16 05:47:22.663 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 开始挑战
-2022-09-16 05:47:24.153 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 提交挑战 porcelain_teacup(ResNet)_model: 0.02s
-2022-09-16 05:47:26.180 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 获取响应 - desc=继续挑战(continue)
-2022-09-16 05:47:27.829 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 获取挑战标签 - label=「猫形饼干」
-2022-09-16 05:47:28.990 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] Types of challenges not yet scheduled - label=「猫形饼干」 prompt=「请点击每张包含猫形饼干的图片」 screenshot=/home/runner/work/game_auto_get/game_auto_get/epic/src/database/temp_cache/captcha_screenshot/1663278448.猫形饼干.png site_link=https://www.epicgames.com/id/login/epic?lang=zh-CN issues=https://github.com/QIN2DIM/hcaptcha-challenger/issues?q=%E7%8C%AB%E5%BD%A2%E9%A5%BC%E5%B9%B2
-2022-09-16 05:47:31.703 | DEBUG    | services.bricklayer.core:login:1019 - >> MATCH [CookieManager] 实体信息注入完毕
-2022-09-16 05:47:31.847 | DEBUG    | services.bricklayer.core:fall_in_captcha_login:83 - >> ARMOR [ArmorUtils] 正在检测隐藏在登录界面的人机挑战...
-2022-09-16 05:47:35.246 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 获取挑战标签 - label=「porcelain_teacup」
-2022-09-16 05:47:35.981 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 开始挑战
-2022-09-16 05:47:37.700 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 提交挑战 porcelain_teacup(ResNet)_model: 0.01s
-2022-09-16 05:47:39.716 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 获取响应 - desc=继续挑战(continue)
-2022-09-16 05:47:41.348 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 获取挑战标签 - label=「porcelain_teacup」
-2022-09-16 05:47:42.082 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 开始挑战
-2022-09-16 05:47:43.640 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 提交挑战 porcelain_teacup(ResNet)_model: 0.01s
-2022-09-16 05:47:45.659 | DEBUG    | services.utils.armor.anti_hcaptcha.core:log:172 - >> Challenge [ArmorCaptcha] 获取响应 - desc=继续挑战(continue)
-2022-09-16 05:47:45.662 | CRITICAL | services.bricklayer.core:refresh_ctx_cookies:1364 - >> MISS [CookieManager] Identity token update failed.
-2022-09-16 05:47:45.663 | ERROR    | services.deploy:_bad_omen:266 - >> Notify [GameClaimer] 推送运行日志 - active_pusher=[] err=認證失敗，可能原因：公网IP被标记为高威胁目标
+2022-09-30 05:46:07.330 | DEBUG    | hcaptcha_challenger._solutions.kernel:_request_asset:299 - Downloading objects.yaml from https://raw.githubusercontent.com/QIN2DIM/hcaptcha-challenger/main/src/objects.yaml
+2022-09-30 05:46:07.382 | DEBUG    | hcaptcha_challenger._solutions.kernel:request_assets:132 - Pulling AssetsObject from https://api.github.com/repos/qin2dim/hcaptcha-challenger/releases
+2022-09-30 05:46:07.513 | DEBUG    | hcaptcha_challenger._solutions.kernel:_request_asset:299 - Downloading yolov6n.onnx from https://github.com/QIN2DIM/hcaptcha-challenger/releases/download/model/yolov6n.onnx
+2022-09-30 05:46:08.824 | INFO     | services.deploy:job_loop_claim:125 - >> STARTUP [AwesomeScheduler] SynergyTunnel Pattern: True
+2022-09-30 05:46:08.876 | DEBUG    | services.bricklayer.core:load_ctx_cookies:1201 - >> LOAD [CookieManager] Load context cookie.
+2022-09-30 05:46:09.238 | SUCCESS  | services.bricklayer.core:refresh_ctx_cookies:1268 - >> MATCH [__Context__] 🎮 启动挑战者上下文 - ctx_session=False
+2022-09-30 05:46:09.802 | INFO     | services.utils.toolbox:get_challenge_ctx:179 - Please use `xvfb` to empower the headful Chrome.
+2022-09-30 05:46:09.802 | INFO     | services.utils.toolbox:get_challenge_ctx:180 - CMD: xvfb-run python3 main.py claim
+2022-09-30 05:47:10.372 | ERROR    | services.deploy:__enter__:192 - Message: unknown error: cannot connect to chrome at 127.0.0.1:33937
+from chrome not reachable
+Stacktrace:
+#0 0x55a46a11d693 <unknown>
+#1 0x55a469f169db <unknown>
+#2 0x55a469f0681e <unknown>
+#3 0x55a469f3f677 <unknown>
+#4 0x55a469f36e9f <unknown>
+#5 0x55a469f72953 <unknown>
+#6 0x55a469f6c743 <unknown>
+#7 0x55a469f42533 <unknown>
+#8 0x55a469f43715 <unknown>
+#9 0x55a46a16d7bd <unknown>
+#10 0x55a46a170bf9 <unknown>
+#11 0x55a46a152f2e <unknown>
+#12 0x55a46a1719b3 <unknown>
+#13 0x55a46a146e4f <unknown>
+#14 0x55a46a190ea8 <unknown>
+#15 0x55a46a191052 <unknown>
+#16 0x55a46a1ab71f <unknown>
+#17 0x7fcf6e0cb609 <unknown>
+
+Traceback (most recent call last):
+  File "/home/runner/work/game_auto_get/game_auto_get/epic/src/main.py", line 11, in <module>
+    Fire(Scaffold)
+  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/fire/core.py", line 141, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/fire/core.py", line 466, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/fire/core.py", line 681, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "/home/runner/work/game_auto_get/game_auto_get/epic/src/services/scaffold.py", line 133, in claim
+    claimer.run(silence=silence, log_ignore=ignore, unreal=unreal)
+  File "/home/runner/work/game_auto_get/game_auto_get/epic/src/apis/scaffold/claimer.py", line 26, in run
+    ClaimerScheduler(silence=silence, unreal=unreal).job_loop_claim(log_ignore)
+  File "/home/runner/work/game_auto_get/game_auto_get/epic/src/services/deploy.py", line 132, in job_loop_claim
+    with GameClaimerInstance(self.silence, log_ignore=log_ignore) as claimer:
+> File "/home/runner/work/game_auto_get/game_auto_get/epic/src/services/deploy.py", line 184, in __enter__
+    if _manager.refresh_ctx_cookies(keep_live=True, silence=self.silence):
+  File "/home/runner/work/game_auto_get/game_auto_get/epic/src/services/bricklayer/core.py", line 1277, in refresh_ctx_cookies
+    ctx = ctx_session or get_challenge_ctx(silence=silence)
+  File "/home/runner/work/game_auto_get/game_auto_get/epic/src/services/utils/toolbox.py", line 183, in get_challenge_ctx
+    return Challenger(options=options, driver_executable_path=driver_wrapper.path)
+  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/undetected_chromedriver/__init__.py", line 401, in __init__
+    super(Chrome, self).__init__(
+  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/selenium/webdriver/chrome/webdriver.py", line 69, in __init__
+    super().__init__(DesiredCapabilities.CHROME['browserName'], "goog",
+  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/selenium/webdriver/chromium/webdriver.py", line 92, in __init__
+    super().__init__(
+  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 270, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/undetected_chromedriver/__init__.py", line 589, in start_session
+    super(selenium.webdriver.chrome.webdriver.WebDriver, self).start_session(
+  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 363, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 428, in execute
+    self.error_handler.check_response(response)
+  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: cannot connect to chrome at 127.0.0.1:33937
+from chrome not reachable
+Stacktrace:
+#0 0x55a46a11d693 <unknown>
+#1 0x55a469f169db <unknown>
+#2 0x55a469f0681e <unknown>
+#3 0x55a469f3f677 <unknown>
+#4 0x55a469f36e9f <unknown>
+#5 0x55a469f72953 <unknown>
+#6 0x55a469f6c743 <unknown>
+#7 0x55a469f42533 <unknown>
+#8 0x55a469f43715 <unknown>
+#9 0x55a46a16d7bd <unknown>
+#10 0x55a46a170bf9 <unknown>
+#11 0x55a46a152f2e <unknown>
+#12 0x55a46a1719b3 <unknown>
+#13 0x55a46a146e4f <unknown>
+#14 0x55a46a190ea8 <unknown>
+#15 0x55a46a191052 <unknown>
+#16 0x55a46a1ab71f <unknown>
+#17 0x7fcf6e0cb609 <unknown>
+
+2022-09-30 05:47:10.379 | ERROR    | services.deploy:_bad_omen:260 - >> Notify [GameClaimer] 推送运行日志 - active_pusher=[] err=Message: unknown error: cannot connect to chrome at 127.0.0.1:33937
+from chrome not reachable
+Stacktrace:
+#0 0x55a46a11d693 <unknown>
+#1 0x55a469f169db <unknown>
+#2 0x55a469f0681e <unknown>
+#3 0x55a469f3f677 <unknown>
+#4 0x55a469f36e9f <unknown>
+#5 0x55a469f72953 <unknown>
+#6 0x55a469f6c743 <unknown>
+#7 0x55a469f42533 <unknown>
+#8 0x55a469f43715 <unknown>
+#9 0x55a46a16d7bd <unknown>
+#10 0x55a46a170bf9 <unknown>
+#11 0x55a46a152f2e <unknown>
+#12 0x55a46a1719b3 <unknown>
+#13 0x55a46a146e4f <unknown>
+#14 0x55a46a190ea8 <unknown>
+#15 0x55a46a191052 <unknown>
+#16 0x55a46a1ab71f <unknown>
+#17 0x7fcf6e0cb609 <unknown>
+
