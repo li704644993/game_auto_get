@@ -1,33 +1,33 @@
-2022-10-07 05:45:11.589 | DEBUG    | hcaptcha_challenger._solutions.kernel:_request_asset:307 - Downloading objects.yaml from https://raw.githubusercontent.com/QIN2DIM/hcaptcha-challenger/main/src/objects.yaml
-2022-10-07 05:45:11.631 | DEBUG    | hcaptcha_challenger._solutions.kernel:request_assets:133 - Pulling AssetsObject from https://api.github.com/repos/qin2dim/hcaptcha-challenger/releases
-2022-10-07 05:45:11.931 | DEBUG    | hcaptcha_challenger._solutions.kernel:_request_asset:307 - Downloading yolov6n.onnx from https://github.com/QIN2DIM/hcaptcha-challenger/releases/download/model/yolov6n.onnx
-2022-10-07 05:45:13.922 | INFO     | services.deploy:job_loop_claim:126 - >> STARTUP [AwesomeScheduler] SynergyTunnel Pattern: True
-2022-10-07 05:45:14.005 | DEBUG    | services.bricklayer.core:load_ctx_cookies:1157 - >> LOAD [CookieManager] Load context cookie.
-2022-10-07 05:45:14.450 | SUCCESS  | services.bricklayer.core:refresh_ctx_cookies:1221 - >> MATCH [__Context__] 🎮 启动挑战者上下文 - ctx_session=False
-2022-10-07 05:45:15.070 | INFO     | services.utils.toolbox:get_challenge_ctx:127 - Please use `xvfb` to empower the headful Chrome.
-2022-10-07 05:45:15.071 | INFO     | services.utils.toolbox:get_challenge_ctx:128 - CMD: xvfb-run python3 main.py claim
-2022-10-07 05:46:15.639 | ERROR    | services.deploy:__enter__:196 - Message: unknown error: cannot connect to chrome at 127.0.0.1:58101
+2022-10-14 05:45:16.979 | DEBUG    | hcaptcha_challenger._solutions.kernel:_request_asset:307 - Downloading objects.yaml from https://raw.githubusercontent.com/QIN2DIM/hcaptcha-challenger/main/src/objects.yaml
+2022-10-14 05:45:17.008 | DEBUG    | hcaptcha_challenger._solutions.kernel:request_assets:133 - Pulling AssetsObject from https://api.github.com/repos/qin2dim/hcaptcha-challenger/releases
+2022-10-14 05:45:17.308 | DEBUG    | hcaptcha_challenger._solutions.kernel:_request_asset:307 - Downloading yolov6n.onnx from https://github.com/QIN2DIM/hcaptcha-challenger/releases/download/model/yolov6n.onnx
+2022-10-14 05:45:19.019 | INFO     | services.deploy:job_loop_claim:126 - >> STARTUP [AwesomeScheduler] SynergyTunnel Pattern: True
+2022-10-14 05:45:19.091 | DEBUG    | services.bricklayer.core:load_ctx_cookies:1157 - >> LOAD [CookieManager] Load context cookie.
+2022-10-14 05:45:19.475 | SUCCESS  | services.bricklayer.core:refresh_ctx_cookies:1221 - >> MATCH [__Context__] 🎮 启动挑战者上下文 - ctx_session=False
+2022-10-14 05:45:23.855 | INFO     | services.utils.toolbox:get_challenge_ctx:127 - Please use `xvfb` to empower the headful Chrome.
+2022-10-14 05:45:23.856 | INFO     | services.utils.toolbox:get_challenge_ctx:128 - CMD: xvfb-run python3 main.py claim
+2022-10-14 05:46:24.463 | ERROR    | services.deploy:__enter__:196 - Message: unknown error: cannot connect to chrome at 127.0.0.1:43345
 from chrome not reachable
 Stacktrace:
-#0 0x5563a9bcc2c3 <unknown>
-#1 0x5563a99d5700 <unknown>
-#2 0x5563a99c563e <unknown>
-#3 0x5563a99fe8c8 <unknown>
-#4 0x5563a99f61af <unknown>
-#5 0x5563a9a34de6 <unknown>
-#6 0x5563a9a3474f <unknown>
-#7 0x5563a9a2cd63 <unknown>
-#8 0x5563a9a017e3 <unknown>
-#9 0x5563a9a02a21 <unknown>
-#10 0x5563a9c1a18e <unknown>
-#11 0x5563a9c1d622 <unknown>
-#12 0x5563a9c00aae <unknown>
-#13 0x5563a9c1e2a3 <unknown>
-#14 0x5563a9bf4ecf <unknown>
-#15 0x5563a9c3e588 <unknown>
-#16 0x5563a9c3e706 <unknown>
-#17 0x5563a9c588b2 <unknown>
-#18 0x7fdf833be609 <unknown>
+#0 0x55c6e01742c3 <unknown>
+#1 0x55c6dff7d700 <unknown>
+#2 0x55c6dff6d63e <unknown>
+#3 0x55c6dffa68c8 <unknown>
+#4 0x55c6dff9e1af <unknown>
+#5 0x55c6dffdcde6 <unknown>
+#6 0x55c6dffdc74f <unknown>
+#7 0x55c6dffd4d63 <unknown>
+#8 0x55c6dffa97e3 <unknown>
+#9 0x55c6dffaaa21 <unknown>
+#10 0x55c6e01c218e <unknown>
+#11 0x55c6e01c5622 <unknown>
+#12 0x55c6e01a8aae <unknown>
+#13 0x55c6e01c62a3 <unknown>
+#14 0x55c6e019cecf <unknown>
+#15 0x55c6e01e6588 <unknown>
+#16 0x55c6e01e6706 <unknown>
+#17 0x55c6e02008b2 <unknown>
+#18 0x7f5c62268609 <unknown>
 
 Traceback (most recent call last):
   File "/home/runner/work/game_auto_get/game_auto_get/epic/src/main.py", line 11, in <module>
@@ -66,49 +66,49 @@ Traceback (most recent call last):
     self.error_handler.check_response(response)
   File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 243, in check_response
     raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.WebDriverException: Message: unknown error: cannot connect to chrome at 127.0.0.1:58101
+selenium.common.exceptions.WebDriverException: Message: unknown error: cannot connect to chrome at 127.0.0.1:43345
 from chrome not reachable
 Stacktrace:
-#0 0x5563a9bcc2c3 <unknown>
-#1 0x5563a99d5700 <unknown>
-#2 0x5563a99c563e <unknown>
-#3 0x5563a99fe8c8 <unknown>
-#4 0x5563a99f61af <unknown>
-#5 0x5563a9a34de6 <unknown>
-#6 0x5563a9a3474f <unknown>
-#7 0x5563a9a2cd63 <unknown>
-#8 0x5563a9a017e3 <unknown>
-#9 0x5563a9a02a21 <unknown>
-#10 0x5563a9c1a18e <unknown>
-#11 0x5563a9c1d622 <unknown>
-#12 0x5563a9c00aae <unknown>
-#13 0x5563a9c1e2a3 <unknown>
-#14 0x5563a9bf4ecf <unknown>
-#15 0x5563a9c3e588 <unknown>
-#16 0x5563a9c3e706 <unknown>
-#17 0x5563a9c588b2 <unknown>
-#18 0x7fdf833be609 <unknown>
+#0 0x55c6e01742c3 <unknown>
+#1 0x55c6dff7d700 <unknown>
+#2 0x55c6dff6d63e <unknown>
+#3 0x55c6dffa68c8 <unknown>
+#4 0x55c6dff9e1af <unknown>
+#5 0x55c6dffdcde6 <unknown>
+#6 0x55c6dffdc74f <unknown>
+#7 0x55c6dffd4d63 <unknown>
+#8 0x55c6dffa97e3 <unknown>
+#9 0x55c6dffaaa21 <unknown>
+#10 0x55c6e01c218e <unknown>
+#11 0x55c6e01c5622 <unknown>
+#12 0x55c6e01a8aae <unknown>
+#13 0x55c6e01c62a3 <unknown>
+#14 0x55c6e019cecf <unknown>
+#15 0x55c6e01e6588 <unknown>
+#16 0x55c6e01e6706 <unknown>
+#17 0x55c6e02008b2 <unknown>
+#18 0x7f5c62268609 <unknown>
 
-2022-10-07 05:46:15.647 | ERROR    | services.deploy:_bad_omen:264 - >> Notify [GameClaimer] 推送运行日志 - active_pusher=[] err=Message: unknown error: cannot connect to chrome at 127.0.0.1:58101
+2022-10-14 05:46:24.469 | ERROR    | services.deploy:_bad_omen:264 - >> Notify [GameClaimer] 推送运行日志 - active_pusher=[] err=Message: unknown error: cannot connect to chrome at 127.0.0.1:43345
 from chrome not reachable
 Stacktrace:
-#0 0x5563a9bcc2c3 <unknown>
-#1 0x5563a99d5700 <unknown>
-#2 0x5563a99c563e <unknown>
-#3 0x5563a99fe8c8 <unknown>
-#4 0x5563a99f61af <unknown>
-#5 0x5563a9a34de6 <unknown>
-#6 0x5563a9a3474f <unknown>
-#7 0x5563a9a2cd63 <unknown>
-#8 0x5563a9a017e3 <unknown>
-#9 0x5563a9a02a21 <unknown>
-#10 0x5563a9c1a18e <unknown>
-#11 0x5563a9c1d622 <unknown>
-#12 0x5563a9c00aae <unknown>
-#13 0x5563a9c1e2a3 <unknown>
-#14 0x5563a9bf4ecf <unknown>
-#15 0x5563a9c3e588 <unknown>
-#16 0x5563a9c3e706 <unknown>
-#17 0x5563a9c588b2 <unknown>
-#18 0x7fdf833be609 <unknown>
+#0 0x55c6e01742c3 <unknown>
+#1 0x55c6dff7d700 <unknown>
+#2 0x55c6dff6d63e <unknown>
+#3 0x55c6dffa68c8 <unknown>
+#4 0x55c6dff9e1af <unknown>
+#5 0x55c6dffdcde6 <unknown>
+#6 0x55c6dffdc74f <unknown>
+#7 0x55c6dffd4d63 <unknown>
+#8 0x55c6dffa97e3 <unknown>
+#9 0x55c6dffaaa21 <unknown>
+#10 0x55c6e01c218e <unknown>
+#11 0x55c6e01c5622 <unknown>
+#12 0x55c6e01a8aae <unknown>
+#13 0x55c6e01c62a3 <unknown>
+#14 0x55c6e019cecf <unknown>
+#15 0x55c6e01e6588 <unknown>
+#16 0x55c6e01e6706 <unknown>
+#17 0x55c6e02008b2 <unknown>
+#18 0x7f5c62268609 <unknown>
 
