@@ -1,114 +1,17 @@
-2022-10-14 05:45:16.979 | DEBUG    | hcaptcha_challenger._solutions.kernel:_request_asset:307 - Downloading objects.yaml from https://raw.githubusercontent.com/QIN2DIM/hcaptcha-challenger/main/src/objects.yaml
-2022-10-14 05:45:17.008 | DEBUG    | hcaptcha_challenger._solutions.kernel:request_assets:133 - Pulling AssetsObject from https://api.github.com/repos/qin2dim/hcaptcha-challenger/releases
-2022-10-14 05:45:17.308 | DEBUG    | hcaptcha_challenger._solutions.kernel:_request_asset:307 - Downloading yolov6n.onnx from https://github.com/QIN2DIM/hcaptcha-challenger/releases/download/model/yolov6n.onnx
-2022-10-14 05:45:19.019 | INFO     | services.deploy:job_loop_claim:126 - >> STARTUP [AwesomeScheduler] SynergyTunnel Pattern: True
-2022-10-14 05:45:19.091 | DEBUG    | services.bricklayer.core:load_ctx_cookies:1157 - >> LOAD [CookieManager] Load context cookie.
-2022-10-14 05:45:19.475 | SUCCESS  | services.bricklayer.core:refresh_ctx_cookies:1221 - >> MATCH [__Context__] 🎮 启动挑战者上下文 - ctx_session=False
-2022-10-14 05:45:23.855 | INFO     | services.utils.toolbox:get_challenge_ctx:127 - Please use `xvfb` to empower the headful Chrome.
-2022-10-14 05:45:23.856 | INFO     | services.utils.toolbox:get_challenge_ctx:128 - CMD: xvfb-run python3 main.py claim
-2022-10-14 05:46:24.463 | ERROR    | services.deploy:__enter__:196 - Message: unknown error: cannot connect to chrome at 127.0.0.1:43345
-from chrome not reachable
-Stacktrace:
-#0 0x55c6e01742c3 <unknown>
-#1 0x55c6dff7d700 <unknown>
-#2 0x55c6dff6d63e <unknown>
-#3 0x55c6dffa68c8 <unknown>
-#4 0x55c6dff9e1af <unknown>
-#5 0x55c6dffdcde6 <unknown>
-#6 0x55c6dffdc74f <unknown>
-#7 0x55c6dffd4d63 <unknown>
-#8 0x55c6dffa97e3 <unknown>
-#9 0x55c6dffaaa21 <unknown>
-#10 0x55c6e01c218e <unknown>
-#11 0x55c6e01c5622 <unknown>
-#12 0x55c6e01a8aae <unknown>
-#13 0x55c6e01c62a3 <unknown>
-#14 0x55c6e019cecf <unknown>
-#15 0x55c6e01e6588 <unknown>
-#16 0x55c6e01e6706 <unknown>
-#17 0x55c6e02008b2 <unknown>
-#18 0x7f5c62268609 <unknown>
-
-Traceback (most recent call last):
-  File "/home/runner/work/game_auto_get/game_auto_get/epic/src/main.py", line 11, in <module>
-    Fire(Scaffold)
-  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/fire/core.py", line 141, in Fire
-    component_trace = _Fire(component, args, parsed_flag_args, context, name)
-  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/fire/core.py", line 466, in _Fire
-    component, remaining_args = _CallAndUpdateTrace(
-  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/fire/core.py", line 681, in _CallAndUpdateTrace
-    component = fn(*varargs, **kwargs)
-  File "/home/runner/work/game_auto_get/game_auto_get/epic/src/services/scaffold.py", line 134, in claim
-    claimer.run(silence=silence, log_ignore=ignore, unreal=unreal)
-  File "/home/runner/work/game_auto_get/game_auto_get/epic/src/apis/scaffold/claimer.py", line 26, in run
-    ClaimerScheduler(silence=silence, unreal=unreal).job_loop_claim(log_ignore)
-  File "/home/runner/work/game_auto_get/game_auto_get/epic/src/services/deploy.py", line 133, in job_loop_claim
-    with GameClaimerInstance(self.silence, log_ignore=log_ignore) as claimer:
-> File "/home/runner/work/game_auto_get/game_auto_get/epic/src/services/deploy.py", line 188, in __enter__
-    if _manager.refresh_ctx_cookies(keep_live=True, silence=self.silence):
-  File "/home/runner/work/game_auto_get/game_auto_get/epic/src/services/bricklayer/core.py", line 1230, in refresh_ctx_cookies
-    ctx = ctx_session or get_challenge_ctx(silence=silence)
-  File "/home/runner/work/game_auto_get/game_auto_get/epic/src/services/utils/toolbox.py", line 132, in get_challenge_ctx
-    return Challenger(options=options, driver_executable_path=driver_wrapper.path)
-  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/undetected_chromedriver/__init__.py", line 401, in __init__
-    super(Chrome, self).__init__(
-  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/selenium/webdriver/chrome/webdriver.py", line 69, in __init__
-    super().__init__(DesiredCapabilities.CHROME['browserName'], "goog",
-  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/selenium/webdriver/chromium/webdriver.py", line 92, in __init__
-    super().__init__(
-  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 270, in __init__
-    self.start_session(capabilities, browser_profile)
-  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/undetected_chromedriver/__init__.py", line 589, in start_session
-    super(selenium.webdriver.chrome.webdriver.WebDriver, self).start_session(
-  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 363, in start_session
-    response = self.execute(Command.NEW_SESSION, parameters)
-  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 428, in execute
-    self.error_handler.check_response(response)
-  File "/opt/hostedtoolcache/Python/3.10.7/x64/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 243, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.WebDriverException: Message: unknown error: cannot connect to chrome at 127.0.0.1:43345
-from chrome not reachable
-Stacktrace:
-#0 0x55c6e01742c3 <unknown>
-#1 0x55c6dff7d700 <unknown>
-#2 0x55c6dff6d63e <unknown>
-#3 0x55c6dffa68c8 <unknown>
-#4 0x55c6dff9e1af <unknown>
-#5 0x55c6dffdcde6 <unknown>
-#6 0x55c6dffdc74f <unknown>
-#7 0x55c6dffd4d63 <unknown>
-#8 0x55c6dffa97e3 <unknown>
-#9 0x55c6dffaaa21 <unknown>
-#10 0x55c6e01c218e <unknown>
-#11 0x55c6e01c5622 <unknown>
-#12 0x55c6e01a8aae <unknown>
-#13 0x55c6e01c62a3 <unknown>
-#14 0x55c6e019cecf <unknown>
-#15 0x55c6e01e6588 <unknown>
-#16 0x55c6e01e6706 <unknown>
-#17 0x55c6e02008b2 <unknown>
-#18 0x7f5c62268609 <unknown>
-
-2022-10-14 05:46:24.469 | ERROR    | services.deploy:_bad_omen:264 - >> Notify [GameClaimer] 推送运行日志 - active_pusher=[] err=Message: unknown error: cannot connect to chrome at 127.0.0.1:43345
-from chrome not reachable
-Stacktrace:
-#0 0x55c6e01742c3 <unknown>
-#1 0x55c6dff7d700 <unknown>
-#2 0x55c6dff6d63e <unknown>
-#3 0x55c6dffa68c8 <unknown>
-#4 0x55c6dff9e1af <unknown>
-#5 0x55c6dffdcde6 <unknown>
-#6 0x55c6dffdc74f <unknown>
-#7 0x55c6dffd4d63 <unknown>
-#8 0x55c6dffa97e3 <unknown>
-#9 0x55c6dffaaa21 <unknown>
-#10 0x55c6e01c218e <unknown>
-#11 0x55c6e01c5622 <unknown>
-#12 0x55c6e01a8aae <unknown>
-#13 0x55c6e01c62a3 <unknown>
-#14 0x55c6e019cecf <unknown>
-#15 0x55c6e01e6588 <unknown>
-#16 0x55c6e01e6706 <unknown>
-#17 0x55c6e02008b2 <unknown>
-#18 0x7f5c62268609 <unknown>
-
+2022-10-28 05:41:11.537 | DEBUG    | hcaptcha_challenger._solutions.kernel:_request_asset:307 - Downloading objects.yaml from https://raw.githubusercontent.com/QIN2DIM/hcaptcha-challenger/main/src/objects.yaml
+2022-10-28 05:41:11.597 | DEBUG    | hcaptcha_challenger._solutions.kernel:request_assets:133 - Pulling AssetsObject from https://api.github.com/repos/qin2dim/hcaptcha-challenger/releases
+2022-10-28 05:41:11.718 | DEBUG    | hcaptcha_challenger._solutions.kernel:_request_asset:307 - Downloading yolov6n.onnx from https://github.com/QIN2DIM/hcaptcha-challenger/releases/download/model/yolov6n.onnx
+2022-10-28 05:41:13.897 | INFO     | services.deploy:job_loop_claim:108 - >> STARTUP [AwesomeScheduler] SynergyTunnel Pattern: False
+2022-10-28 05:41:14.447 | ERROR    | services.deploy:_bad_omen:222 - >> Notify [GameClaimer] 推送运行日志 - active_pusher=[] err=
+╔════════════════════════════════════════════════════════════════════════════════════════════════╗
+║ Looks like you launched a headed browser without having a XServer running.                     ║
+║ Set either 'headless: true' or use 'xvfb-run <your-playwright-app>' before running Playwright. ║
+║                                                                                                ║
+║ <3 Playwright Team                                                                             ║
+╚════════════════════════════════════════════════════════════════════════════════════════════════╝
+=========================== logs ===========================
+<launching> /home/runner/.cache/ms-playwright/chromium-1028/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --enable-features=NetworkService,NetworkServiceInProcess --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-sync --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --no-sandbox --user-data-dir=/home/runner/work/game_auto_get/game_auto_get/epic/src/database/users/13debbbec305c6f178906ff7563d5da7880e16d2d522718c7a23f1b23a890002 --remote-debugging-pipe about:blank
+<launched> pid=2050
+[pid=2050][err] [2050:2050:1028/054114.425122:ERROR:ozone_platform_x11.cc(239)] Missing X server or $DISPLAY
+[pid=2050][err] [2050:2050:1028/054114.425174:ERROR:env.cc(255)] The platform failed to initialize.  Exiting.
+============================================================
