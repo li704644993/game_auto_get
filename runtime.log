@@ -1,8 +1,8 @@
-2022-10-28 05:41:11.537 | DEBUG    | hcaptcha_challenger._solutions.kernel:_request_asset:307 - Downloading objects.yaml from https://raw.githubusercontent.com/QIN2DIM/hcaptcha-challenger/main/src/objects.yaml
-2022-10-28 05:41:11.597 | DEBUG    | hcaptcha_challenger._solutions.kernel:request_assets:133 - Pulling AssetsObject from https://api.github.com/repos/qin2dim/hcaptcha-challenger/releases
-2022-10-28 05:41:11.718 | DEBUG    | hcaptcha_challenger._solutions.kernel:_request_asset:307 - Downloading yolov6n.onnx from https://github.com/QIN2DIM/hcaptcha-challenger/releases/download/model/yolov6n.onnx
-2022-10-28 05:41:13.897 | INFO     | services.deploy:job_loop_claim:108 - >> STARTUP [AwesomeScheduler] SynergyTunnel Pattern: False
-2022-10-28 05:41:14.447 | ERROR    | services.deploy:_bad_omen:222 - >> Notify [GameClaimer] 推送运行日志 - active_pusher=[] err=
+2022-11-04 05:33:03.581 | DEBUG    | hcaptcha_challenger._solutions.kernel:_request_asset:307 - Downloading objects.yaml from https://raw.githubusercontent.com/QIN2DIM/hcaptcha-challenger/main/src/objects.yaml
+2022-11-04 05:33:03.619 | DEBUG    | hcaptcha_challenger._solutions.kernel:request_assets:133 - Pulling AssetsObject from https://api.github.com/repos/qin2dim/hcaptcha-challenger/releases
+2022-11-04 05:33:03.655 | DEBUG    | hcaptcha_challenger._solutions.kernel:_request_asset:307 - Downloading yolov6n.onnx from https://github.com/QIN2DIM/hcaptcha-challenger/releases/download/model/yolov6n.onnx
+2022-11-04 05:33:06.338 | INFO     | services.deploy:job_loop_claim:104 - >> STARTUP [AwesomeScheduler] SynergyTunnel Pattern: False
+2022-11-04 05:33:07.045 | ERROR    | services.deploy:_bad_omen:219 - >> Notify [GameClaimer] 推送运行日志 - active_pusher=[] err=
 ╔════════════════════════════════════════════════════════════════════════════════════════════════╗
 ║ Looks like you launched a headed browser without having a XServer running.                     ║
 ║ Set either 'headless: true' or use 'xvfb-run <your-playwright-app>' before running Playwright. ║
@@ -11,7 +11,7 @@
 ╚════════════════════════════════════════════════════════════════════════════════════════════════╝
 =========================== logs ===========================
 <launching> /home/runner/.cache/ms-playwright/chromium-1028/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --enable-features=NetworkService,NetworkServiceInProcess --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-sync --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --no-sandbox --user-data-dir=/home/runner/work/game_auto_get/game_auto_get/epic/src/database/users/13debbbec305c6f178906ff7563d5da7880e16d2d522718c7a23f1b23a890002 --remote-debugging-pipe about:blank
-<launched> pid=2050
-[pid=2050][err] [2050:2050:1028/054114.425122:ERROR:ozone_platform_x11.cc(239)] Missing X server or $DISPLAY
-[pid=2050][err] [2050:2050:1028/054114.425174:ERROR:env.cc(255)] The platform failed to initialize.  Exiting.
+<launched> pid=1921
+[pid=1921][err] [1921:1921:1104/053307.014270:ERROR:ozone_platform_x11.cc(239)] Missing X server or $DISPLAY
+[pid=1921][err] [1921:1921:1104/053307.014337:ERROR:env.cc(255)] The platform failed to initialize.  Exiting.
 ============================================================
