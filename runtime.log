@@ -1,8 +1,40 @@
-2022-11-04 05:33:03.581 | DEBUG    | hcaptcha_challenger._solutions.kernel:_request_asset:307 - Downloading objects.yaml from https://raw.githubusercontent.com/QIN2DIM/hcaptcha-challenger/main/src/objects.yaml
-2022-11-04 05:33:03.619 | DEBUG    | hcaptcha_challenger._solutions.kernel:request_assets:133 - Pulling AssetsObject from https://api.github.com/repos/qin2dim/hcaptcha-challenger/releases
-2022-11-04 05:33:03.655 | DEBUG    | hcaptcha_challenger._solutions.kernel:_request_asset:307 - Downloading yolov6n.onnx from https://github.com/QIN2DIM/hcaptcha-challenger/releases/download/model/yolov6n.onnx
-2022-11-04 05:33:06.338 | INFO     | services.deploy:job_loop_claim:104 - >> STARTUP [AwesomeScheduler] SynergyTunnel Pattern: False
-2022-11-04 05:33:07.045 | ERROR    | services.deploy:_bad_omen:219 - >> Notify [GameClaimer] 推送运行日志 - active_pusher=[] err=
+2022-11-11 05:34:55.956 | DEBUG    | hcaptcha_challenger._solutions.kernel:_request_asset:307 - Downloading objects.yaml from https://raw.githubusercontent.com/QIN2DIM/hcaptcha-challenger/main/src/objects.yaml
+2022-11-11 05:34:55.980 | DEBUG    | hcaptcha_challenger._solutions.kernel:request_assets:133 - Pulling AssetsObject from https://api.github.com/repos/qin2dim/hcaptcha-challenger/releases
+2022-11-11 05:34:56.285 | DEBUG    | hcaptcha_challenger._solutions.kernel:_request_asset:307 - Downloading yolov6n.onnx from https://github.com/QIN2DIM/hcaptcha-challenger/releases/download/model/yolov6n.onnx
+2022-11-11 05:34:58.839 | INFO     | services.deploy:job_loop_claim:104 - >> STARTUP [AwesomeScheduler] SynergyTunnel - version=0.4.4-dev Pattern=False
+2022-11-11 05:34:59.501 | ERROR    | services.scaffold:claim:138 - An error has been caught in function 'claim', process 'MainProcess' (1761), thread 'MainThread' (140190677636928):
+Traceback (most recent call last):
+  File "/home/runner/work/game_auto_get/game_auto_get/epic/src/main.py", line 11, in <module>
+    Fire(Scaffold)
+  File "/opt/hostedtoolcache/Python/3.10.8/x64/lib/python3.10/site-packages/fire/core.py", line 141, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/opt/hostedtoolcache/Python/3.10.8/x64/lib/python3.10/site-packages/fire/core.py", line 466, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+  File "/opt/hostedtoolcache/Python/3.10.8/x64/lib/python3.10/site-packages/fire/core.py", line 681, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+> File "/home/runner/work/game_auto_get/game_auto_get/epic/src/services/scaffold.py", line 138, in claim
+    claimer.run(silence=silence, log_ignore=ignore, unreal=unreal)
+  File "/home/runner/work/game_auto_get/game_auto_get/epic/src/apis/scaffold/claimer.py", line 26, in run
+    ClaimerScheduler(silence=silence, unreal=unreal).job_loop_claim(log_ignore)
+  File "/home/runner/work/game_auto_get/game_auto_get/epic/src/services/deploy.py", line 112, in job_loop_claim
+    claimer.just_do_it()
+  File "/home/runner/work/game_auto_get/game_auto_get/epic/src/services/deploy.py", line 414, in just_do_it
+    fire(
+  File "/home/runner/work/game_auto_get/game_auto_get/epic/src/services/utils/toolbox.py", line 77, in fire
+    context = p.chromium.launch_persistent_context(
+  File "/opt/hostedtoolcache/Python/3.10.8/x64/lib/python3.10/site-packages/playwright/sync_api/_generated.py", line 12940, in launch_persistent_context
+    self._sync(
+  File "/opt/hostedtoolcache/Python/3.10.8/x64/lib/python3.10/site-packages/playwright/_impl/_sync_base.py", line 104, in _sync
+    return task.result()
+  File "/opt/hostedtoolcache/Python/3.10.8/x64/lib/python3.10/site-packages/playwright/_impl/_browser_type.py", line 155, in launch_persistent_context
+    from_channel(await self._channel.send("launchPersistentContext", params)),
+  File "/opt/hostedtoolcache/Python/3.10.8/x64/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 43, in send
+    return await self._connection.wrap_api_call(
+  File "/opt/hostedtoolcache/Python/3.10.8/x64/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 396, in wrap_api_call
+    return await cb()
+  File "/opt/hostedtoolcache/Python/3.10.8/x64/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 78, in inner_send
+    result = next(iter(done)).result()
+playwright._impl._api_types.Error: 
 ╔════════════════════════════════════════════════════════════════════════════════════════════════╗
 ║ Looks like you launched a headed browser without having a XServer running.                     ║
 ║ Set either 'headless: true' or use 'xvfb-run <your-playwright-app>' before running Playwright. ║
@@ -11,7 +43,7 @@
 ╚════════════════════════════════════════════════════════════════════════════════════════════════╝
 =========================== logs ===========================
 <launching> /home/runner/.cache/ms-playwright/chromium-1028/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --enable-features=NetworkService,NetworkServiceInProcess --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-sync --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --no-sandbox --user-data-dir=/home/runner/work/game_auto_get/game_auto_get/epic/src/database/users/13debbbec305c6f178906ff7563d5da7880e16d2d522718c7a23f1b23a890002 --remote-debugging-pipe about:blank
-<launched> pid=1921
-[pid=1921][err] [1921:1921:1104/053307.014270:ERROR:ozone_platform_x11.cc(239)] Missing X server or $DISPLAY
-[pid=1921][err] [1921:1921:1104/053307.014337:ERROR:env.cc(255)] The platform failed to initialize.  Exiting.
+<launched> pid=1887
+[pid=1887][err] [1887:1887:1111/053459.475626:ERROR:ozone_platform_x11.cc(239)] Missing X server or $DISPLAY
+[pid=1887][err] [1887:1887:1111/053459.475686:ERROR:env.cc(255)] The platform failed to initialize.  Exiting.
 ============================================================
