@@ -1,8 +1,8 @@
-2022-11-11 05:34:55.956 | DEBUG    | hcaptcha_challenger._solutions.kernel:_request_asset:307 - Downloading objects.yaml from https://raw.githubusercontent.com/QIN2DIM/hcaptcha-challenger/main/src/objects.yaml
-2022-11-11 05:34:55.980 | DEBUG    | hcaptcha_challenger._solutions.kernel:request_assets:133 - Pulling AssetsObject from https://api.github.com/repos/qin2dim/hcaptcha-challenger/releases
-2022-11-11 05:34:56.285 | DEBUG    | hcaptcha_challenger._solutions.kernel:_request_asset:307 - Downloading yolov6n.onnx from https://github.com/QIN2DIM/hcaptcha-challenger/releases/download/model/yolov6n.onnx
-2022-11-11 05:34:58.839 | INFO     | services.deploy:job_loop_claim:104 - >> STARTUP [AwesomeScheduler] SynergyTunnel - version=0.4.4-dev Pattern=False
-2022-11-11 05:34:59.501 | ERROR    | services.scaffold:claim:138 - An error has been caught in function 'claim', process 'MainProcess' (1761), thread 'MainThread' (140190677636928):
+2022-11-18 05:33:20.017 | DEBUG    | hcaptcha_challenger._solutions.kernel:_request_asset:307 - Downloading objects.yaml from https://raw.githubusercontent.com/QIN2DIM/hcaptcha-challenger/main/src/objects.yaml
+2022-11-18 05:33:20.056 | DEBUG    | hcaptcha_challenger._solutions.kernel:request_assets:133 - Pulling AssetsObject from https://api.github.com/repos/qin2dim/hcaptcha-challenger/releases
+2022-11-18 05:33:20.099 | DEBUG    | hcaptcha_challenger._solutions.kernel:_request_asset:307 - Downloading yolov6n.onnx from https://github.com/QIN2DIM/hcaptcha-challenger/releases/download/model/yolov6n.onnx
+2022-11-18 05:33:22.065 | INFO     | services.deploy:job_loop_claim:104 - >> STARTUP [AwesomeScheduler] SynergyTunnel - version=0.4.4-dev Pattern=False
+2022-11-18 05:33:22.632 | ERROR    | services.scaffold:claim:138 - An error has been caught in function 'claim', process 'MainProcess' (1763), thread 'MainThread' (139764635838272):
 Traceback (most recent call last):
   File "/home/runner/work/game_auto_get/game_auto_get/epic/src/main.py", line 11, in <module>
     Fire(Scaffold)
@@ -18,7 +18,7 @@ Traceback (most recent call last):
     ClaimerScheduler(silence=silence, unreal=unreal).job_loop_claim(log_ignore)
   File "/home/runner/work/game_auto_get/game_auto_get/epic/src/services/deploy.py", line 112, in job_loop_claim
     claimer.just_do_it()
-  File "/home/runner/work/game_auto_get/game_auto_get/epic/src/services/deploy.py", line 414, in just_do_it
+  File "/home/runner/work/game_auto_get/game_auto_get/epic/src/services/deploy.py", line 309, in just_do_it
     fire(
   File "/home/runner/work/game_auto_get/game_auto_get/epic/src/services/utils/toolbox.py", line 77, in fire
     context = p.chromium.launch_persistent_context(
@@ -43,7 +43,7 @@ playwright._impl._api_types.Error:
 ╚════════════════════════════════════════════════════════════════════════════════════════════════╝
 =========================== logs ===========================
 <launching> /home/runner/.cache/ms-playwright/chromium-1028/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --enable-features=NetworkService,NetworkServiceInProcess --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-sync --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --no-sandbox --user-data-dir=/home/runner/work/game_auto_get/game_auto_get/epic/src/database/users/13debbbec305c6f178906ff7563d5da7880e16d2d522718c7a23f1b23a890002 --remote-debugging-pipe about:blank
-<launched> pid=1887
-[pid=1887][err] [1887:1887:1111/053459.475626:ERROR:ozone_platform_x11.cc(239)] Missing X server or $DISPLAY
-[pid=1887][err] [1887:1887:1111/053459.475686:ERROR:env.cc(255)] The platform failed to initialize.  Exiting.
+<launched> pid=1889
+[pid=1889][err] [1889:1889:1118/053322.614281:ERROR:ozone_platform_x11.cc(239)] Missing X server or $DISPLAY
+[pid=1889][err] [1889:1889:1118/053322.614328:ERROR:env.cc(255)] The platform failed to initialize.  Exiting.
 ============================================================
