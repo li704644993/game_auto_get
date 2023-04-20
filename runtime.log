@@ -1,8 +1,8 @@
-2023-04-14 05:33:00.053 | DEBUG    | hcaptcha_challenger._solutions.kernel:_request_asset:320 - Downloading objects.yaml from https://raw.githubusercontent.com/QIN2DIM/hcaptcha-challenger/main/src/objects.yaml
-2023-04-14 05:33:00.182 | DEBUG    | hcaptcha_challenger._solutions.kernel:request_assets:148 - Pulling AssetsObject from https://api.github.com/repos/QIN2DIM/hcaptcha-challenger/releases
-2023-04-14 05:33:00.584 | DEBUG    | hcaptcha_challenger._solutions.kernel:_request_asset:320 - Downloading yolov6n.onnx from https://github.com/QIN2DIM/hcaptcha-challenger/releases/download/model/yolov6n.onnx
-2023-04-14 05:33:03.742 | INFO     | services.deploy:job_loop_claim:104 - >> STARTUP [AwesomeScheduler] SynergyTunnel - version=0.4.4-dev Pattern=False
-2023-04-14 05:33:04.520 | ERROR    | services.scaffold:claim:138 - An error has been caught in function 'claim', process 'MainProcess' (1805), thread 'MainThread' (140055326022528):
+2023-04-21 05:32:54.582 | DEBUG    | hcaptcha_challenger._solutions.kernel:_request_asset:323 - Downloading objects.yaml from https://raw.githubusercontent.com/QIN2DIM/hcaptcha-challenger/main/src/objects.yaml
+2023-04-21 05:32:54.707 | DEBUG    | hcaptcha_challenger._solutions.kernel:_request_assets:156 - Pulling AssetsObject from https://api.github.com/repos/QIN2DIM/hcaptcha-challenger/releases
+2023-04-21 05:32:55.121 | DEBUG    | hcaptcha_challenger._solutions.kernel:_request_asset:323 - Downloading yolov6n.onnx from https://github.com/QIN2DIM/hcaptcha-challenger/releases/download/model/yolov6n.onnx
+2023-04-21 05:32:57.912 | INFO     | services.deploy:job_loop_claim:104 - >> STARTUP [AwesomeScheduler] SynergyTunnel - version=0.4.4-dev Pattern=False
+2023-04-21 05:32:58.522 | ERROR    | services.scaffold:claim:138 - An error has been caught in function 'claim', process 'MainProcess' (1889), thread 'MainThread' (139803324496960):
 Traceback (most recent call last):
   File "/home/runner/work/game_auto_get/game_auto_get/epic/src/main.py", line 11, in <module>
     Fire(Scaffold)
@@ -43,7 +43,9 @@ playwright._impl._api_types.Error:
 ╚════════════════════════════════════════════════════════════════════════════════════════════════╝
 =========================== logs ===========================
 <launching> /home/runner/.cache/ms-playwright/chromium-1028/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --enable-features=NetworkService,NetworkServiceInProcess --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-sync --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --no-sandbox --user-data-dir=/home/runner/work/game_auto_get/game_auto_get/epic/src/database/users/13debbbec305c6f178906ff7563d5da7880e16d2d522718c7a23f1b23a890002 --remote-debugging-pipe about:blank
-<launched> pid=1930
-[pid=1930][err] [1930:1930:0414/053304.497315:ERROR:ozone_platform_x11.cc(239)] Missing X server or $DISPLAY
-[pid=1930][err] [1930:1930:0414/053304.497371:ERROR:env.cc(255)] The platform failed to initialize.  Exiting.
+<launched> pid=2014
+[pid=2014][err] [2014:2014:0421/053258.499617:ERROR:ozone_platform_x11.cc(239)] Missing X server or $DISPLAY
+[pid=2014][err] [2014:2014:0421/053258.499666:ERROR:env.cc(255)] The platform failed to initialize.  Exiting.
+[pid=2014] <process did exit: exitCode=1, signal=null>
+[pid=2014] starting temporary directories cleanup
 ============================================================
