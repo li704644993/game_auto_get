@@ -1,8 +1,8 @@
-2023-05-05 05:33:03.166 | DEBUG    | hcaptcha_challenger._solutions.kernel:_request_asset:323 - Downloading objects.yaml from https://raw.githubusercontent.com/QIN2DIM/hcaptcha-challenger/main/src/objects.yaml
-2023-05-05 05:33:03.284 | DEBUG    | hcaptcha_challenger._solutions.kernel:_request_assets:156 - Pulling AssetsObject from https://api.github.com/repos/QIN2DIM/hcaptcha-challenger/releases
-2023-05-05 05:33:03.772 | DEBUG    | hcaptcha_challenger._solutions.kernel:_request_asset:323 - Downloading yolov6n.onnx from https://github.com/QIN2DIM/hcaptcha-challenger/releases/download/model/yolov6n.onnx
-2023-05-05 05:33:06.863 | INFO     | services.deploy:job_loop_claim:104 - >> STARTUP [AwesomeScheduler] SynergyTunnel - version=0.4.4-dev Pattern=False
-2023-05-05 05:33:09.345 | ERROR    | services.scaffold:claim:138 - An error has been caught in function 'claim', process 'MainProcess' (1826), thread 'MainThread' (140560522156928):
+2023-05-12 05:32:54.629 | DEBUG    | hcaptcha_challenger._solutions.kernel:_request_asset:323 - Downloading objects.yaml from https://raw.githubusercontent.com/QIN2DIM/hcaptcha-challenger/main/src/objects.yaml
+2023-05-12 05:32:54.875 | DEBUG    | hcaptcha_challenger._solutions.kernel:_request_assets:156 - Pulling AssetsObject from https://api.github.com/repos/QIN2DIM/hcaptcha-challenger/releases
+2023-05-12 05:32:55.360 | DEBUG    | hcaptcha_challenger._solutions.kernel:_request_asset:323 - Downloading yolov6n.onnx from https://github.com/QIN2DIM/hcaptcha-challenger/releases/download/model/yolov6n.onnx
+2023-05-12 05:32:57.795 | INFO     | services.deploy:job_loop_claim:104 - >> STARTUP [AwesomeScheduler] SynergyTunnel - version=0.4.4-dev Pattern=False
+2023-05-12 05:32:58.376 | ERROR    | services.scaffold:claim:138 - An error has been caught in function 'claim', process 'MainProcess' (1799), thread 'MainThread' (140378195020864):
 Traceback (most recent call last):
   File "/home/runner/work/game_auto_get/game_auto_get/epic/src/main.py", line 11, in <module>
     Fire(Scaffold)
@@ -43,7 +43,7 @@ playwright._impl._api_types.Error:
 ╚════════════════════════════════════════════════════════════════════════════════════════════════╝
 =========================== logs ===========================
 <launching> /home/runner/.cache/ms-playwright/chromium-1028/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --enable-features=NetworkService,NetworkServiceInProcess --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-sync --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --no-sandbox --user-data-dir=/home/runner/work/game_auto_get/game_auto_get/epic/src/database/users/13debbbec305c6f178906ff7563d5da7880e16d2d522718c7a23f1b23a890002 --remote-debugging-pipe about:blank
-<launched> pid=1952
-[pid=1952][err] [1952:1952:0505/053309.318747:ERROR:ozone_platform_x11.cc(239)] Missing X server or $DISPLAY
-[pid=1952][err] [1952:1952:0505/053309.318826:ERROR:env.cc(255)] The platform failed to initialize.  Exiting.
+<launched> pid=1924
+[pid=1924][err] [1924:1924:0512/053258.361688:ERROR:ozone_platform_x11.cc(239)] Missing X server or $DISPLAY
+[pid=1924][err] [1924:1924:0512/053258.361730:ERROR:env.cc(255)] The platform failed to initialize.  Exiting.
 ============================================================
